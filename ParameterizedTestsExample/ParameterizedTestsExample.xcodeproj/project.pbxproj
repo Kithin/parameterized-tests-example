@@ -11,6 +11,7 @@
 		5E38F1242AA788FA00A0DDC5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E38F1232AA788FA00A0DDC5 /* LICENSE */; };
 		5E38F1262AA7890000A0DDC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E38F1252AA7890000A0DDC5 /* README.md */; };
 		5E38F1322AA8BA0900A0DDC5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E38F1312AA8BA0900A0DDC5 /* Profile.swift */; };
+		5E4736362AAE5D3D00986D6C /* ProfileDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4736352AAE5D3D00986D6C /* ProfileDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		5E38F1232AA788FA00A0DDC5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5E38F1252AA7890000A0DDC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5E38F1312AA8BA0900A0DDC5 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5E4736352AAE5D3D00986D6C /* ProfileDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				5E38F1312AA8BA0900A0DDC5 /* Profile.swift */,
+				5E4736352AAE5D3D00986D6C /* ProfileDatabase.swift */,
 			);
 			path = ParameterizedTestsExample;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4736362AAE5D3D00986D6C /* ProfileDatabase.swift in Sources */,
 				5E38F1322AA8BA0900A0DDC5 /* Profile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
