@@ -16,73 +16,64 @@ final class ProfileDatabaseTests: XCTestCase {
         try super.tearDownWithError()
     }
     
-    func test_returnProfileHasBeenCreatedMessage_whenCreatingProfileWithOnlyFirstName() throws {
-        let profile = Profile(
-            firstName: "John",
-            lastName: nil,
-            email: nil,
-            phoneNumber: nil,
-            image: nil
-        )
-        
-        let message = sut.create(profile)
-        
-        XCTAssertEqual("🥳 profile has been created!", message)
-    }
-    
-    func test_returnProfileHasBeenCreatedMessage_whenCreatingProfileWithOnlyFirstNameAndLastName() throws {
-        let profile = Profile(
-            firstName: "John",
-            lastName: "Doe",
-            email: nil,
-            phoneNumber: nil,
-            image: nil
-        )
-        
-        let message = sut.create(profile)
-        
-        XCTAssertEqual("🥳 profile has been created!", message)
-    }
-    
-    func test_returnProfileHasBeenCreatedMessage_whenCreatingProfileWithOnlyFirstNameAndLastNameAndEmail() throws {
-        let profile = Profile(
-            firstName: "John",
-            lastName: "Doe",
-            email: "john_doe@example.com",
-            phoneNumber: nil,
-            image: nil
-        )
-        
-        let message = sut.create(profile)
-        
-        XCTAssertEqual("🥳 profile has been created!", message)
-    }
-    
-    func test_returnProfileHasBeenCreatedMessage_whenCreatingProfileWithOnlyFirstNameAndLastNameAndEmailAndPhoneNumber() throws {
-        let profile = Profile(
-            firstName: "John",
-            lastName: "Doe",
-            email: "john_doe@example.com",
-            phoneNumber: 0123456789,
-            image: nil
-        )
-        
-        let message = sut.create(profile)
-        
-        XCTAssertEqual("🥳 profile has been created!", message)
-    }
-    
-    func test_returnProfileHasBeenCreatedMessage_whenCreatingProfileWithAllArguments() throws {
-        let profile = Profile(
-            firstName: "John",
-            lastName: "Doe",
-            email: "john_doe@example.com",
-            phoneNumber: 0123456789,
-            image: URL(string: "http://image-example.com")
-        )
-        
-        let message = sut.create(profile)
-        
-        XCTAssertEqual("🥳 profile has been created!", message)
+    func test_returnProfileHasBeenCreatedMessage_whenCreatingProfile() throws {
+        [
+            TestCase(
+                input: Profile(
+                    firstName: "John",
+                    lastName: nil,
+                    email: nil,
+                    phoneNumber: nil,
+                    image: nil
+                ),
+                output: "🥳 profile has been created!"
+            ),
+            TestCase(
+                input: Profile(
+                    firstName: "John",
+                    lastName: "Doe",
+                    email: nil,
+                    phoneNumber: nil,
+                    image: nil
+                ),
+                output: "🥳 profile has been created!"
+            ),
+            TestCase(
+                input: Profile(
+                    firstName: "John",
+                    lastName: "Doe",
+                    email: "john_doe@example.com",
+                    phoneNumber: nil,
+                    image: nil
+                ),
+                output: "🥳 profile has been created!"
+            ),
+            TestCase(
+                input: Profile(
+                    firstName: "John",
+                    lastName: "Doe",
+                    email: "john_doe@example.com",
+                    phoneNumber: 0123456789,
+                    image: nil
+                ),
+                output: "🥳 profile has been created!"
+            ),
+            TestCase(
+                input: Profile(
+                    firstName: "John",
+                    lastName: "Doe",
+                    email: "john_doe@example.com",
+                    phoneNumber: 0123456789,
+                    image: URL(string: "http://image-example.com")
+                ),
+                output: "🥳 profile has been created!"
+            )
+        ].forEach { testCase in
+            XCTAssertEqual(
+                testCase.output,
+                sut.create(testCase.input),
+                testCase.message()
+            )
+        }
     }
 }

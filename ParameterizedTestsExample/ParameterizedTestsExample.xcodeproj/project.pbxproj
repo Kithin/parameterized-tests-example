@@ -13,6 +13,7 @@
 		5E38F1322AA8BA0900A0DDC5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E38F1312AA8BA0900A0DDC5 /* Profile.swift */; };
 		5E4736362AAE5D3D00986D6C /* ProfileDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4736352AAE5D3D00986D6C /* ProfileDatabase.swift */; };
 		5E4736392AAE5E2C00986D6C /* ProfileDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4736382AAE5E2B00986D6C /* ProfileDatabaseTests.swift */; };
+		5E47363D2AAE5F5500986D6C /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47363C2AAE5F5500986D6C /* TestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		5E4736352AAE5D3D00986D6C /* ProfileDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDatabase.swift; sourceTree = "<group>"; };
 		5E4736372AAE5E2B00986D6C /* ParameterizedTestsExampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParameterizedTestsExampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		5E4736382AAE5E2B00986D6C /* ProfileDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDatabaseTests.swift; sourceTree = "<group>"; };
+		5E47363C2AAE5F5500986D6C /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		5E38F1172AA7887500A0DDC5 /* ParameterizedTestsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				5E47363C2AAE5F5500986D6C /* TestCase.swift */,
 				5E4736382AAE5E2B00986D6C /* ProfileDatabaseTests.swift */,
 				5E4736372AAE5E2B00986D6C /* ParameterizedTestsExampleTests-Bridging-Header.h */,
 			);
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E4736392AAE5E2C00986D6C /* ProfileDatabaseTests.swift in Sources */,
+				5E47363D2AAE5F5500986D6C /* TestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
