@@ -12,6 +12,7 @@
 		5E38F1262AA7890000A0DDC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E38F1252AA7890000A0DDC5 /* README.md */; };
 		5E38F1322AA8BA0900A0DDC5 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E38F1312AA8BA0900A0DDC5 /* Profile.swift */; };
 		5E4736362AAE5D3D00986D6C /* ProfileDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4736352AAE5D3D00986D6C /* ProfileDatabase.swift */; };
+		5E4736392AAE5E2C00986D6C /* ProfileDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4736382AAE5E2B00986D6C /* ProfileDatabaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,8 @@
 		5E38F1252AA7890000A0DDC5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5E38F1312AA8BA0900A0DDC5 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5E4736352AAE5D3D00986D6C /* ProfileDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDatabase.swift; sourceTree = "<group>"; };
+		5E4736372AAE5E2B00986D6C /* ParameterizedTestsExampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParameterizedTestsExampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E4736382AAE5E2B00986D6C /* ProfileDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDatabaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		5E38F1172AA7887500A0DDC5 /* ParameterizedTestsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				5E4736382AAE5E2B00986D6C /* ProfileDatabaseTests.swift */,
+				5E4736372AAE5E2B00986D6C /* ParameterizedTestsExampleTests-Bridging-Header.h */,
 			);
 			path = ParameterizedTestsExampleTests;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 					};
 					5E38F1122AA7887500A0DDC5 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -208,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4736392AAE5E2C00986D6C /* ProfileDatabaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,13 +409,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Kittako.ParameterizedTestsExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ParameterizedTestsExampleTests/ParameterizedTestsExampleTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -417,13 +432,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Kittako.ParameterizedTestsExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "ParameterizedTestsExampleTests/ParameterizedTestsExampleTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
