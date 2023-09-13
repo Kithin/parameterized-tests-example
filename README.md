@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Project-Example-lightgrey" />
-  <img src="https://img.shields.io/badge/Testing_Technique-Parameterized Tests-orange" />
+  <img src="https://img.shields.io/badge/Testing_Technique-Parameterized_Tests-orange" />
   <img src="https://img.shields.io/badge/Swift-5.0-red" />
 
   <a href="https://kittako.hashnode.dev">
